@@ -1,0 +1,107 @@
+.logo{
+  width:12rem;
+  opacity: 75%;
+}
+.date-picker{
+  text-align: center;
+  font-size: 25px;
+}
+.date-pick{
+  background: #757575;
+  border-radius: 6px;
+  border-color: lightslategrey;
+  color: #bdbdbd;
+  padding: 5px;
+}
+.date-submit{
+  color: #bdbdbd;
+  margin-left: 25px;
+  font-size: 17px;
+}
+.explain{
+  margin: 50px 180px;
+}
+.title{
+  color: #bdbdbd;
+}
+.explanation{
+      font-size: 1.2rem;
+}
+.quote{
+  margin: 50px 26%;
+font-size: 1.4rem;
+  color: #bdbdbd;
+}
+
+body{
+  background-color: #000000;
+  color: #9e9e9e;
+}
+.container1{
+  height:200px;
+}
+.container2{
+  height:150px;
+}
+.home-bg{
+  background-image: url("/images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  margin:200px 250px 100px;
+
+
+}
+nav{
+  font-size: 1.2rem;
+  z-index: 3;
+}
+footer{
+  text-align: center;
+
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.aboutp{
+  margin:100px;
+}
+
+
+
+
+.stars, .twinkling, .clouds {
+	position:absolute;
+	display:block;
+	top:0; bottom:0;
+	left:0; right:0;
+	width:100%; height:100%;
+}
+
+.stars {
+	z-index: 0;
+	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+}
+
+.twinkling{
+	z-index: 1;
+	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
+	animation: move-twink-back 200s linear infinite;
+}
+
+.clouds{
+	z-index: 2;
+    background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+	animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
+}

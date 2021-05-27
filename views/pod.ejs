@@ -1,0 +1,57 @@
+<%- include("partials/header") -%>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img class="logo" src="images/APOD-V.png" alt="APOD-V logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/pod">Picture of the Day</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds">
+
+
+<div class="container2">
+
+</div>
+<form class="date-picker" action="/pod" method="post">
+  <label class="podate-label" for="podate">Pick a Date :  </label>
+  <input class="date-pick" type="date" id="podate" name="podate">
+  <input class="date-submit btn btn-dark btn-lg" type="submit">
+</form>
+<div class="explain">
+  <h1 class="title"><%= data.title %></h1>
+
+  <p class="explanation">     <%= data.explanation %></p>
+  <% if(data.copyright){ %>
+    <p>Credits: <%=data.copyright%></p>
+  <% } %>
+  <p>Picture of the Day: <%= data.date%></p>
+</div>
+<% if(data.media_type==="image"){ %>
+  <img class="pod d-block w-75 m-auto" src="<%= data.hdurl %>" alt="pictureoftheday">
+<% }else{ %>
+  <iframe class="d-block w-75 m-auto" width="420" height="600" src="<%= data.url %>">
+</iframe>
+<% } %>
+
+
+
+
+<%- include("partials/footer") -%>
