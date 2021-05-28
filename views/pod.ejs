@@ -45,7 +45,7 @@
   <p>Picture of the Day: <%= data.date%></p>
 </div>
 <% if(data.media_type==="image"){ %>
-  <img class="pod d-block w-75 m-auto" src="<%= data.hdurl %>" alt="pictureoftheday">
+  <img class="pod d-block m-auto" src="<%= data.hdurl %>" alt="pictureoftheday">
 <% }else{ %>
   <iframe class="d-block w-75 m-auto" width="420" height="600" src="<%= data.url %>">
 </iframe>

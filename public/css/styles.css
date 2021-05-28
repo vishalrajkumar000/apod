@@ -6,6 +6,9 @@
   width:12rem;
   opacity: 75%;
 }
+.pod{
+  width: 85%!important;
+}
 .date-picker{
   text-align: center;
   font-size: 25px;
@@ -17,13 +20,9 @@
   color: #bdbdbd;
   padding: 5px;
 }
-.date-submit{
-  color: #bdbdbd;
-  margin-left: 25px;
-  font-size: 17px;
-}
+
 .explain{
-  margin: 50px 180px;
+  margin: 50px 7%;
 }
 .title{
   color: #bdbdbd;
@@ -69,29 +68,67 @@ footer{
   padding: 2rem;
 }
 
-@media (max-width:400px) {
-  footer{
-    text-align: center;
-    margin-top: 2rem;
-    padding: 2rem;
-    position: absolute;
-    bottom: 1px;
-    left: 30.99%;
+.date-submit {
+  font-size: 15px;
+  margin-top: 15px;
+}
+@media (min-width:399px) {
+  .date-submit {
+    margin-left: 25px;
   }
 }
-@media (max-width:400px) {
-  .nav-logo{
-    width: 25rem;
+@media (max-width:550px) {
+  .quote {
+    margin: 50px 3%;
+    font-size: 1.2rem;
+    color: #bdbdbd;
+    text-align: center;
+}
+.car{
+  width: 75%!important;
+}
+.carousel-control-prev,.carousel-control-next{
+  display: none;
+}
+.carousel-indicators{
+  top: 165px;
+}
+  footer{
+    font-size: 10px;
+  }
+  .logo-nav{
+    width: 11rem;
   }
   .logo{
-    width: 13rem;
+    width: 8rem;
   }
+
+  .date-picker {
+    font-size: 18px;
+}
+.explain {
+    margin: 50px 7%;
+    text-align: center;
+}
+.title{
+font-size: 1.5rem;
+}
+.explanation {
+    font-size: 0.9rem;
+}
+.explain p{
+  font-size: 0.7rem;
+}
   .nav-link{
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  .pod{
+    width: 100%!important;
   }
 }
 .aboutp{
-  margin:100px;
+  margin: 8% 12%;
+  padding: 1.5rem;
 }
 
 
