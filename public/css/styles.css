@@ -2,6 +2,10 @@
   width:12rem;
   opacity: 75%;
 }
+.logo-nav{
+  width:12rem;
+  opacity: 75%;
+}
 .date-picker{
   text-align: center;
   font-size: 25px;
@@ -63,6 +67,28 @@ footer{
 
   margin-top: 2rem;
   padding: 2rem;
+}
+
+@media (max-width:400px) {
+  footer{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    position: absolute;
+    bottom: 1px;
+    left: 30.99%;
+  }
+}
+@media (max-width:400px) {
+  .nav-logo{
+    width: 25rem;
+  }
+  .logo{
+    width: 13rem;
+  }
+  .nav-link{
+    font-size: 1.5rem;
+  }
 }
 .aboutp{
   margin:100px;
