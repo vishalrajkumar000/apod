@@ -6,6 +6,9 @@
   width:12rem;
   opacity: 75%;
 }
+.car{
+  width: 60%!important;
+}
 .pod{
   width: 85%!important;
 }
