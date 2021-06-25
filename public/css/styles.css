@@ -4,11 +4,81 @@
 }
 .logo-nav{
   width:12rem;
-  opacity: 75%;
 }
+.first{
+  padding: 3% 10%;
+}
+h1{
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+  font-weight: 900;
+  font-family: 'Montserrat';
+}
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+.appimage{
+  width: 49%;
+}
+.img1{
+transform: rotate(15deg);
+}
+.img2{
+transform: rotate(-15deg);
+}
+@media (max-width:991px) {
+  #banner1{
+    text-align: center;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+}
+/* banner-2 */
+
+#banner2{
+  background: white;
+  padding: 6% 7% 7%;
+  text-align: center;
+}
+.icon{
+  color: slateblue;
+  margin-top: 10%;
+}
+h3{
+  padding: 7% 0 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  color: black;
+}
+.fdesc{
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  color:grey;
+}
+
+/* banner3 */
+
+#banner3{
+  padding: 8% 0 3%;
+}
+
 .car{
   width: 60%!important;
 }
+.quote{
+  padding: 2% 0 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  color: #bdbdbd;
+}
+
+
+
 .pod{
   width: 85%!important;
 }
@@ -33,18 +103,14 @@
 .explanation{
       font-size: 1.2rem;
 }
-.quote{
-  margin: 50px 26%;
-font-size: 1.4rem;
-  color: #bdbdbd;
-}
+
 
 body{
   background-color: #000000;
   color: #9e9e9e;
 }
 .container1{
-  height:200px;
+  height:150px;
 }
 .container2{
   height:150px;
