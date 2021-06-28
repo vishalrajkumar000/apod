@@ -28,91 +28,111 @@
 <div class="clouds">
 
 
-<section id="banner1">
+  <section id="banner1">
 
 
-<div class="container1">
+    <div class="container1">
 
-</div>
-<div class="container-fluid first">
-  <div class="row">
-    <div class="col-lg-6 m-auto">
-      <h1>Come find all the beautiful secrets of our universe.</h1>
-          <button type="button" class="btn btn-outline-success btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
-          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
     </div>
-    <div class="col-lg-6 p-4">
-      <img class="appimage img1"src="images/app1.png" alt="app1">
-      <img class="appimage img2"src="images/app2.png" alt="app2">
+    <div class="container-fluid first">
+      <div class="row">
+        <div class="col-lg-6 m-auto">
+          <h1>Come find all the beautiful secrets of our universe.</h1>
+          <a href="/download"><button type="button" class="btn btn-outline-success btn-lg download-button"><i class="fab fa-google-play"></i> Download</button></a>
+          <button data-bs-toggle="modal" data-bs-target="#iosModal" type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+
+        </div>
+        <div class="col-lg-6 p-4">
+          <img class="appimage img1" src="images/app1.png" alt="app1">
+          <img class="appimage img2" src="images/app2.png" alt="app2">
+        </div>
+
+      </div>
+
     </div>
 
+  </section>
+
+
+  <section id="banner2">
+    <div class="row">
+      <div class="col-lg-4 ">
+        <i class="far fa-calendar-alt fa-5x icon"></i>
+        <h3>Search for any date</h3>
+        <p class="fdesc">Astronomy picture of the day available for any day staring 1996.</p>
+      </div>
+      <div class="col-lg-4 ">
+        <i class="fas fa-heart fa-5x icon"></i>
+        <h3>Calm your heart</h3>
+        <p class="fdesc">With these beatiful pictures handpicked by NASA feel a little more.</p>
+      </div>
+      <div class="col-lg-4 ">
+        <i class="fab fa-searchengin fa-5x icon"></i>
+        <h3>More number of searches</h3>
+        <p class="fdesc">Search up to 2000 times every hour and check how many more you can make.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="banner3">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/car1.jpg" class="d-block m-auto car" alt="img1">
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="images/car2.jpg" class="d-block m-auto car" alt="img2">
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="images/car3.jpg" class="d-block m-auto car" alt="img3">
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="images/car4.jpg" class="d-block m-auto car" alt="img4">
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="images/car5.jpg" class="d-block m-auto car" alt="img5">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="quote">
+      <p>" Earth is a small town with many neighbourhoods in a very big universe."</p>
+    </div>
+  </section>
+
+  <!-- Modal -->
+
+  <div style="background-color: rgba(0, 0, 0, 0.5);" data-bs-backdrop="false" class="modal fade" id="iosModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Coming soon!!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          IOS version is under development and will be available soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Hurrah!</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-</div>
-</section>
 
-
-<section id="banner2">
-  <div class="row">
-    <div class="col-lg-4 ">
-      <i class="far fa-calendar-alt fa-5x icon"></i>
-      <h3>Search for any date</h3>
-      <p class="fdesc">Astronomy picture of the day available for any day staring 1996.</p>
-    </div>
-    <div class="col-lg-4 ">
-      <i class="fas fa-heart fa-5x icon"></i>
-      <h3>Calm your heart</h3>
-      <p class="fdesc">With these beatiful pictures handpicked by NASA feel a little more.</p>
-    </div>
-    <div class="col-lg-4 ">
-      <i class="fab fa-searchengin fa-5x icon"></i>
-      <h3>More number of searches</h3>
-      <p class="fdesc">Search up to 2000 times every hour and check how many more you can make.</p>
-    </div>
-  </div>
-</section>
-
-
-<section id="banner3">
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="images/car1.jpg" class="d-block m-auto car" alt="img1">
-      </div>
-      <div class="carousel-item" data-bs-interval="10000">
-        <img src="images/car2.jpg" class="d-block m-auto car" alt="img2">
-      </div>
-      <div class="carousel-item" data-bs-interval="10000">
-        <img src="images/car3.jpg" class="d-block m-auto car" alt="img3">
-      </div>
-      <div class="carousel-item" data-bs-interval="10000">
-        <img src="images/car4.jpg" class="d-block m-auto car" alt="img4">
-      </div>
-      <div class="carousel-item" data-bs-interval="10000">
-        <img src="images/car5.jpg" class="d-block m-auto car" alt="img5">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <div class="quote">
-    <p >"  Earth is a small town with many neighbourhoods in a very big universe."</p>
-  </div>
-</section>
-
-
-
-<%- include("partials/footer") -%>
+  <%- include("partials/footer") -%>

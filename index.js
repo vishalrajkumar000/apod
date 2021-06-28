@@ -49,6 +49,10 @@ app.get('/about',(req,res)=>{
   res.render("about")
 })
 
+app.get('/download',(req,res)=>{
+  res.download(__dirname+"/public/app/APOD-V.apk")
+})
+
 
 
 app.listen(process.env.PORT || 3000,()=>{
